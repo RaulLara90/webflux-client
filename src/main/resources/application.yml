@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: client-service
+
+server:
+  port: 8090
+
+endpoints:
+  base: "http://apirest-service/api/v2/productos"
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: "http://localhost:8761/eureka"
